@@ -1,0 +1,7 @@
+Rating_module.form:
+  path: '/Rating_module'
+  defaults:
+    _form: '\Drupal\Rating_module\Form\Rating_moduleForm'
+    _title: 'Nodes'
+  requirements:
+    _permission: 'access content'

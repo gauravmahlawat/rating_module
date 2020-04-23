@@ -1,0 +1,6 @@
+name: Rating_module
+type: module
+description: 'This is Rating Feedback module.'
+package: Custom
+version: 8.x
+core: 8.x
