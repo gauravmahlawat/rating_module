@@ -1,9 +1,12 @@
 <?php
 
 
-namespace Drupal\rating_module\Plugin\Block;
+namespace Drupal\RatingModule\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
+use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\RatingModule\Form\RatingModuleclass;
 
 class RatingModule extends BlockBase {
 
