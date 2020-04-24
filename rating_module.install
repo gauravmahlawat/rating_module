@@ -1,0 +1,59 @@
+<?php 
+function rating_module_schema(){
+    $schema['fname'] = array(
+        'description' => 'The table for storing the fname.',
+        'fields' => array(
+            'fname' => array(
+                'type' => 'textfield',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'fname' => array(
+                'description' => 'fname.',
+                'type' => 'textfield',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('fname'),
+    );
+    return $schema;
+    $schema['lname'] = array(
+        'description' => 'The table for storing the lname.',
+        'fields' => array(
+            'lname' => array(
+                'type' => 'textfield',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'lname' => array(
+                'description' => 'lname.',
+                'type' => 'textfield',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('lname'),
+    );
+    return $schema;
+    $schema['RatingModule'] = array(
+        'description' => 'The table for storing the ratings.',
+        'fields' => array(
+            'RatingModule' => array(
+                'type' => 'radios',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'RatingModule' => array(
+                'type' => 'radios',
+                'size' => 'big',
+                'not null' => TRUE,
+                'default' => '1',
+            ),
+        ),
+        'primary key' => array('RatingModule'),
+    );
+    return $schema;
+}
